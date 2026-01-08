@@ -33,7 +33,32 @@ The security of cascade ciphers, in which by definition the keys of the componen
 # Independent Encryption:
 Picking any two ciphers, if the [key](https://en.wikipedia.org/wiki/Key_(cryptography)) used is the same for both, the second cipher could possibly undo the first cipher, partly or entirely. This is true of ciphers where the decryption process is exactly the same as the encryption process (a [reciprocal cipher](https://en.wikipedia.org/wiki/Symmetric-key_algorithm#Reciprocal_cipher)) – the second cipher would completely undo the first. If an attacker were to recover the key through [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis) of the first encryption layer, the attacker could possibly decrypt all the remaining layers, assuming the same key is used for all layers.
 
+In this section, the text is encrypted, and the encryption technique can be chosen as desired. An infinite number of calculations can be added or removed. The length of the formula determines how long the encryption code takes.
 
+```pascall
+if length(CSign) > 0 then
+      begin
+        CCharacters := '';
+        for Ci := 1 to  length(CSign) do
+        begin
+          Cc := CSign[Ci];
+
+          // crypt mode setting
+          case ComboBox2.ItemIndex of
+            0 : Cn := ord(Cc) + 1;
+            1 : Cn := ord(Cc) + StrToInt(ComboBox1.Text);
+            2 : Cn := ord(Cc) + StrToInt(ComboBox1.Text) * Buffer;
+          end;
+
+          CCharacters := CCharacters + chr(Cn);
+        end;
+        Memo1.Lines[Cj] := CCharacters;
+        StatusBar1.Panels[1].Text := IntToStr(Cj);
+        if abort = true then Exit;
+        StatusBar1.Panels[3].Text := 'encrypting please wait..';
+        Application.ProcessMessages;
+      end;
+```
 
 
 
