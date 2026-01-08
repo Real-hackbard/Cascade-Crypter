@@ -17,7 +17,18 @@ Some cryptographers, like Matthew Green of [Johns Hopkins](https://en.wikipedia.
 * Modern ciphers rarely get broken... You’re far more likely to get hit by malware or an implementation bug than you are to suffer a catastrophic attack on AES.
 * — [Multiple Encryption](https://blog.cryptographyengineering.com/2012/02/02/multiple-encryption/)
 
+However, from the previous quote an argument for multiple encryption can be made, namely poor implementation. Using two different cryptomodules and keying processes from two different vendors requires both vendors' wares to be compromised for security to fail completely.
 
+</br>
+
+![CascadeCrypter](https://github.com/user-attachments/assets/c452927d-4b64-4fe2-a9c8-d87a1ddf1f25)
+
+</br>
+
+The security of cascade ciphers, in which by definition the keys of the component ciphers are independent, is considered. It is shown by a counterexample that the intuitive result, formally stated and proved in the literature, that a cascade is at least as strong as the strongest component cipher, requires the uninterestingly restrictive assumption that the enemy cannot exploit information about the plaintext statistics. It is proved, for very general notions of breaking a cipher and of problem difficulty, that a cascade is at least as difficult to break as the first component cipher. A consequence of this result is that, if the ciphers commute, then a cascade is at least as difficult to break as the most-difficult-to-break component cipher, i.e., the intuition that a cryptographic chain is at least as strong as its strongest link is then provably correct. It is noted that additive stream ciphers do commute, and this fact is used to suggest a strategy for designing secure practical ciphers. Other applications in cryptology are given of the arguments used to prove the cascade cipher result.
+
+
+When text is encrypted, its entire structure changes, rendering it unrecognizable. Cascade Crypter encrypts text while preserving its structure, including paragraphs, line breaks, and even the cascaded structure of the text. Only the strings are encrypted; the characters themselves are not shifted.
 
 
 
