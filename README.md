@@ -30,6 +30,8 @@ The security of cascade ciphers, in which by definition the keys of the componen
 
 ```When text is encrypted, its entire structure changes, rendering it unrecognizable. Cascade Crypter encrypts text while preserving its structure, including paragraphs, line breaks, and even the cascaded structure of the text. Only the strings are encrypted; the characters themselves are not shifted.```
 
+# Independent Encryption:
+Picking any two ciphers, if the [key](https://en.wikipedia.org/wiki/Key_(cryptography)) used is the same for both, the second cipher could possibly undo the first cipher, partly or entirely. This is true of ciphers where the decryption process is exactly the same as the encryption process (a [reciprocal cipher](https://en.wikipedia.org/wiki/Symmetric-key_algorithm#Reciprocal_cipher)) – the second cipher would completely undo the first. If an attacker were to recover the key through [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis) of the first encryption layer, the attacker could possibly decrypt all the remaining layers, assuming the same key is used for all layers.
 
 
 
