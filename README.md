@@ -35,7 +35,7 @@ Picking any two ciphers, if the [key](https://en.wikipedia.org/wiki/Key_(cryptog
 
 In this section, the text is encrypted, and the encryption technique can be chosen as desired. An infinite number of calculations can be added or removed. The length of the formula determines how long the encryption code takes.
 
-```pascall
+```pascal
 if length(CSign) > 0 then
       begin
         CCharacters := '';
