@@ -47,7 +47,7 @@ if length(CSign) > 0 then
           case ComboBox2.ItemIndex of
             0 : Cn := ord(Cc) + 1;
             1 : Cn := ord(Cc) + StrToInt(ComboBox1.Text);
-            2 : Cn := ord(Cc) + StrToInt(ComboBox1.Text) * Buffer;
+            2 : Cn := ord(Cc) + StrToInt(ComboBox1.Text) * Buffer; // Buffer is (Int64)
           end;
 
           CCharacters := CCharacters + chr(Cn);
