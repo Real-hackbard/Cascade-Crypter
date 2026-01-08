@@ -61,7 +61,9 @@ if length(CSign) > 0 then
         Application.ProcessMessages;
       end;
 ```
+</br>
 
+Of course, the same sequence of calculations must be applied during decryption, only in the negative range, in order to restore the cascading and successfully decrypt the text.
 
 
 
