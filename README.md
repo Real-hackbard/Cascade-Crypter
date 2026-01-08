@@ -10,6 +10,10 @@
 
 </br>
 
+Multiple encryption is the process of encrypting an already encrypted message one or more times, either using the same or a different algorithm. It is also known as cascade encryption, cascade ciphering, cipher stacking, multiple encryption, and superencipherment. Superencryption refers to the outer-level encryption of a multiple encryption.
+
+Some cryptographers, like Matthew Green of [Johns Hopkins](https://en.wikipedia.org/wiki/Johns_Hopkins_University) University, say multiple encryption addresses a problem that mostly doesn't exist:
+
 
 
 
