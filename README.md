@@ -28,7 +28,8 @@ However, from the previous quote an argument for multiple encryption can be made
 The security of cascade ciphers, in which by definition the keys of the component ciphers are independent, is considered. It is shown by a counterexample that the intuitive result, formally stated and proved in the literature, that a cascade is at least as strong as the strongest component cipher, requires the uninterestingly restrictive assumption that the enemy cannot exploit information about the plaintext statistics. It is proved, for very general notions of breaking a cipher and of problem difficulty, that a cascade is at least as difficult to break as the first component cipher. A consequence of this result is that, if the ciphers commute, then a cascade is at least as difficult to break as the most-difficult-to-break component cipher, i.e., the intuition that a cryptographic chain is at least as strong as its strongest link is then provably correct. It is noted that additive stream ciphers do commute, and this fact is used to suggest a strategy for designing secure practical ciphers. Other applications in cryptology are given of the arguments used to prove the cascade cipher result.
 
 
-When text is encrypted, its entire structure changes, rendering it unrecognizable. Cascade Crypter encrypts text while preserving its structure, including paragraphs, line breaks, and even the cascaded structure of the text. Only the strings are encrypted; the characters themselves are not shifted.
+```When text is encrypted, its entire structure changes, rendering it unrecognizable. Cascade Crypter encrypts text while preserving its structure, including paragraphs, line breaks, and even the cascaded structure of the text. Only the strings are encrypted; the characters themselves are not shifted.```
+
 
 
 
