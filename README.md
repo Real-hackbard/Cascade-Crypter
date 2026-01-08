@@ -14,6 +14,8 @@ Multiple encryption is the process of encrypting an already encrypted message on
 
 Some cryptographers, like Matthew Green of [Johns Hopkins](https://en.wikipedia.org/wiki/Johns_Hopkins_University) University, say multiple encryption addresses a problem that mostly doesn't exist:
 
+* Modern ciphers rarely get broken... You’re far more likely to get hit by malware or an implementation bug than you are to suffer a catastrophic attack on AES.
+* — [Multiple Encryption](https://blog.cryptographyengineering.com/2012/02/02/multiple-encryption/)
 
 
 
